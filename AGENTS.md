@@ -1,5 +1,19 @@
 # AGENTS.md — FlowERP 课程项目记忆与约束
 
+## Agent skills
+
+### Issue tracker
+
+GitHub Issues in this repo are the default request surface for engineering tasks. See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Use the canonical default triage vocabulary: `needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`. See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+This repository uses the single-context default layout: one root-level `CONTEXT.md` or `CONTEXT-MAP.md` and optional `docs/adr/` decisions. See `docs/agents/domain.md`.
+
 ## 项目目标
 
 这是 Codex AI 工程交付行动营的工作台与课程仓库。FlowERP 客户产品独立维护于 https://github.com/congde/flowERP.git；课程建设主线保持不变。全课程统一使用一句建设主线：**用 Codex，搭建个人 AI 研发工作台；通过工作台组织人与 AI 协同，持续开发 FlowERP。** Codex 是 AI 开发伙伴，个人工作台是第一个建设成果和后续协同阵地，FlowERP 是持续增长的客户产品。三者不是并列的三套业务系统，也不得把个人工作台讲成 FlowERP 的员工门户。

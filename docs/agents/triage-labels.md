@@ -1,13 +1,13 @@
-# Triage Labels
+# 分类标签说明
 
-The engineering skills speak in terms of five canonical triage roles. This repo keeps the default vocabulary as-is.
+工程技能使用五种标准化的 triage 角色；这个仓库保持默认词汇不变。
 
-| Label in mattpocock/skills | Label in our tracker | Meaning |
-| -------------------------- | -------------------- | ------- |
-| `needs-triage` | `needs-triage` | Maintainer needs to evaluate this issue |
-| `needs-info` | `needs-info` | Waiting on reporter for more information |
-| `ready-for-agent` | `ready-for-agent` | Fully specified and ready for an agent |
-| `ready-for-human` | `ready-for-human` | Requires human implementation |
-| `wontfix` | `wontfix` | Will not be actioned |
+| mattpocock/skills 中的标签 | 本仓库中的标签 | 含义 |
+| -------------------------- | ---------------- | ---- |
+| `needs-triage` | `needs-triage` | 需要维护者评估该问题 |
+| `needs-info` | `needs-info` | 等待报告者补充信息 |
+| `ready-for-agent` | `ready-for-agent` | 已经明确且适合交给代理处理 |
+| `ready-for-human` | `ready-for-human` | 需要人工实施 |
+| `wontfix` | `wontfix` | 不打算处理 |
 
-Use these exact strings when triage labels are mentioned in engineering tasks.
+在工程任务中提到 triage 标签时，应使用这些精确字符串。

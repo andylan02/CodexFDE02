@@ -1,24 +1,24 @@
-# Domain Docs
+# 领域文档说明
 
-How the engineering skills should consume this repo's domain documentation when exploring the codebase.
+工程技能在探索代码时，应当如何使用这个仓库的领域文档。
 
-## Before exploring, read these
+## 在探索前，优先阅读这些内容
 
-- `CONTEXT.md` at the repo root, or
-- `CONTEXT-MAP.md` at the repo root if it exists: it points to one `CONTEXT.md` per context. Read each relevant to the topic.
-- `docs/adr/`: read ADRs that touch the area you're about to work in.
+- 根目录下的 `CONTEXT.md`，或
+- 根目录下的 `CONTEXT-MAP.md`（如果存在）；它会指向不同上下文的 `CONTEXT.md` 文件，并按主题读取相关内容。
+- `docs/adr/`：只阅读与当前问题直接相关的 ADR。
 
-If these files do not exist, proceed silently. Do not flag their absence or suggest creating them upfront.
+如果这些文件尚不存在，则直接继续，不必提示缺失，也不建议提前创建。
 
-## File structure
+## 文件结构
 
-This repo is currently single-context by default:
+当前这个仓库默认采用单上下文布局：
 
 ```
 /
-├── CONTEXT.md                  (optional)
+├── CONTEXT.md                  (可选)
 ├── docs/
-│   └── adr/                   (optional)
+│   └── adr/                   (可选)
 ├── workbench/
 ├── eval/
 ├── agent/
@@ -26,14 +26,14 @@ This repo is currently single-context by default:
 └── README.md
 ```
 
-If a future monorepo or multi-context layout is introduced, a root `CONTEXT-MAP.md` may point to multiple context-specific `CONTEXT.md` files. Until then, use the single-context default.
+如果后续演变成 monorepo 或多上下文结构，根目录下可以出现 `CONTEXT-MAP.md`，并指向多个上下文的 `CONTEXT.md`。在目前阶段，默认使用单上下文方案即可。
 
-## Use the glossary's vocabulary
+## 使用术语表中的词汇
 
-When output names a domain concept, prefer the terms defined in the repo's `CONTEXT.md` or other domain docs. Do not invent synonyms that conflict with the repo's existing terminology.
+当输出中出现领域概念时，优先使用仓库已有的术语和定义，避免为了表达方便而创造和现有命名冲突的同义词。
 
-## Flag ADR conflicts
+## 识别 ADR 冲突
 
-If an output contradicts an existing ADR, state that explicitly rather than silently overriding it.
+如果输出与现有 ADR 发生冲突，应明确指出，而不是悄悄覆盖它。
 
-> Contradicts ADR-0007 (example), but worth reopening because…
+> 与 ADR-0007（示例）冲突，但值得重新评估，因为……

@@ -4,15 +4,15 @@
 
 ### Issue tracker
 
-GitHub Issues in this repo are the default request surface for engineering tasks. See `docs/agents/issue-tracker.md`.
+这个仓库默认使用 GitHub Issues 作为工程任务入口。见 `docs/agents/issue-tracker.md`。
 
 ### Triage labels
 
-Use the canonical default triage vocabulary: `needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`. See `docs/agents/triage-labels.md`.
+使用默认的标准 triage 词汇：`needs-triage`、`needs-info`、`ready-for-agent`、`ready-for-human`、`wontfix`。见 `docs/agents/triage-labels.md`。
 
 ### Domain docs
 
-This repository uses the single-context default layout: one root-level `CONTEXT.md` or `CONTEXT-MAP.md` and optional `docs/adr/` decisions. See `docs/agents/domain.md`.
+本仓库采用单上下文默认布局：根目录下使用 `CONTEXT.md` 或 `CONTEXT-MAP.md`，并在必要时配合 `docs/adr/` 决策记录。见 `docs/agents/domain.md`。
 
 ## 项目目标
 

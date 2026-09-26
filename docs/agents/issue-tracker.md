@@ -1,32 +1,32 @@
-# Issue tracker: GitHub
+# 问题跟踪：GitHub
 
-Issues and specs for this repo live in the repository's GitHub Issues. Use the `gh` CLI for all ticket operations.
+这个仓库的事项与需求默认以 GitHub Issues 形式管理。工程类技能应该优先使用 `gh` CLI 进行创建、查询和更新。
 
-## Conventions
+## 约定
 
-- Create an issue: `gh issue create --title "..." --body "..."`
-- Read an issue: `gh issue view <number> --comments`
-- List open issues: `gh issue list --state open --json number,title,body,labels --jq '[.[] | {number, title, body, labels: [.labels[].name]}]'`
-- Comment on an issue: `gh issue comment <number> --body "..."`
-- Apply or remove labels: `gh issue edit <number> --add-label "..."` / `--remove-label "..."`
-- Close an issue: `gh issue close <number> --comment "..."`
+- 创建问题：`gh issue create --title "..." --body "..."`
+- 查看问题：`gh issue view <number> --comments`
+- 列出未关闭问题：`gh issue list --state open --json number,title,body,labels --jq '[.[] | {number, title, body, labels: [.labels[].name]}]'`
+- 评论问题：`gh issue comment <number> --body "..."`
+- 添加/移除标签：`gh issue edit <number> --add-label "..."` / `--remove-label "..."`
+- 关闭问题：`gh issue close <number> --comment "..."`
 
-The repository remote is `https://github.com/andylan02/CodexFDE02.git`, so GitHub is the default issue source for engineering skills.
+当前仓库远程地址为 `https://github.com/andylan02/CodexFDE02.git`，因此 GitHub 是工程技能默认采用的事项来源。
 
-## Pull requests as a triage surface
+## PR 是否作为 triage 入口
 
-PRs as a request surface: no.
+PR 作为需求入口：否。
 
-This repo does not currently treat external pull requests as triage-first feature requests. Engineering skills should prioritize GitHub Issues unless a later workflow explicitly opts into PR-based triage.
+这个仓库目前不将外部拉取请求作为首选的 triage 入口。除非后续工作流显式开启 PR 驱动的需求流，否则工程技能应优先处理 GitHub Issues。
 
-## When a skill says "publish to the issue tracker"
+## 当技能要求“发布到 issue tracker”时
 
-Create a GitHub issue in this repo.
+在当前仓库中创建一个 GitHub issue。
 
-## When a skill says "fetch the relevant ticket"
+## 当技能要求“获取相关 ticket”时
 
-Use `gh issue view <number> --comments` and related issue metadata.
+使用 `gh issue view <number> --comments` 以及相关 issue 信息进行定位和阅读。
 
-## Domain notes
+## 领域说明
 
-This repo uses a single-context layout by default. Domain docs are not yet present at the repo root, so the engineering skills should proceed without assuming a bespoke glossary unless one is added later.
+这个仓库当前使用单上下文默认布局。根目录中尚未出现专门的领域术语文件，因此工程技能在未新增领域文档前应避免假设有定制词汇表。
